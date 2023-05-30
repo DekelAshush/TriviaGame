@@ -1,0 +1,27 @@
+package com.example.triviagame;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+
+public class TriviaGame extends Application {
+
+
+    public void start(Stage stage) throws Exception {
+        Parent root = (Parent) FXMLLoader.load(getClass().getResource("TriviaGame.fxml"));
+        Scene scene = new Scene(root);
+        stage.setTitle("Trivia Game");
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public static void main(String[] args) {
+        launch(args);
+        System.out.println();
+    }
+
+
+}

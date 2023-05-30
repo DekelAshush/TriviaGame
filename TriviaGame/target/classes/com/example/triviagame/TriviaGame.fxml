@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="664.0" prefWidth="855.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.triviagame.TriviaGameController">
+   <bottom>
+      <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#SelectAnswer" text="Select Answer" />
+            <Button mnemonicParsing="false" onAction="#newGame" text="New Game" />
+            <Button mnemonicParsing="false" onAction="#endGame" text="End Game" />
+         </children>
+      </HBox>
+   </bottom>
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="100.0" prefWidth="238.0" text="Question Number :">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Label fx:id="numQuestionLabel" prefHeight="107.0" prefWidth="194.0">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <GridPane fx:id="grid" prefHeight="466.0" prefWidth="488.0" BorderPane.alignment="CENTER">
+         <rowConstraints>
+            <RowConstraints />
+         </rowConstraints>
+         <padding>
+            <Insets bottom="100.0" left="100.0" right="100.0" top="100.0" />
+         </padding>
+         <columnConstraints>
+            <ColumnConstraints />
+         </columnConstraints>
+      </GridPane>
+   </center>
+   <right>
+      <Label fx:id="scoreLabel" prefHeight="149.0" prefWidth="255.0" BorderPane.alignment="TOP_LEFT">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+   </right>
+</BorderPane>
